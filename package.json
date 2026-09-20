@@ -1,0 +1,22 @@
+{
+  "name": "restaurante-backend",
+  "version": "1.0.0",
+  "description": "API REST para plataforma de restaurante (menu, combos, promociones, pedidos, admin)",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "create-admin": "node src/scripts/createAdmin.js",
+    "cargar-menu": "node src/scripts/cargarMenuMikuyNina.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
